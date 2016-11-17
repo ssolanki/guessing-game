@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Roboto', sans-serif;
+
+$openSans-font: 'Open Sans', sans-serif; 
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+// colors:
+$white : #fff;
+$white-light: #D7D7D8;
+$black: #0F0F0D;
+$black-light: #4C4C52;
+$yellow: #EFFF1D;
+$blue: #3c8dde;
+$blue-dark: #3072b3;
+$blue-darkest: #2a65a0;
+$blue-light: #eef2f3;
+$blue-lightest: #8e9eab;
+$gray: #b5b5b5;
+$gray-lightest: #f4f4f4;
+$gray-light: #ececec;
+$green: #2ABF9E;
+$voilet: #48485E;
+$red: #f00;
+$orange: #FF4500;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+  'small': (min-width: 320px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 1024px),
+) !default;
