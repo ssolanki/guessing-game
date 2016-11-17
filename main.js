@@ -1,6 +1,6 @@
 "use strict";
 
-var size = 4,gridWidth=70,offset=2,count=60,minScore=90; // grid size is 70 in css
+var size = 4,gridWidth=70,offset=2,count=60,minScore=90,distColor=4; // grid size is 70 in css
 $("#minScore").html(minScore);
 for(var i=0;i<size*size;i++){
 	$( ".grid-container" ).append( "<div class='grid' id='grid"+i+"'> </div>" );	
@@ -14,11 +14,8 @@ var colorIndexes = createNRandomNumbers(16);
 var score = 0;
 function createNRandomNumbers(n){
 	var arr = [];
-	for(var i=0;i<(n-1)/2;i++){
-		arr.push(i);
-	}
-	for(var i=0;i<(n-1)/2;i++){
-		arr.push(i);
+	for(var i=0;i<n;i++){
+		arr.push(i%distColor);	// for other level we can change distColor value and minScore
 	}
 	arr = shuffle(arr);
 	console.log(arr);
