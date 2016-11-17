@@ -26,9 +26,10 @@ $gray: #b5b5b5;
 $gray-lightest: #f4f4f4;
 $gray-light: #ececec;
 $green: #2ABF9E;
-$voilet: #48485E;
-$red: #f00;
+$voilet: #8A2BE2;
+$red: #e43434;
 $orange: #FF4500;
+$background-color: $white-light;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels

@@ -6,13 +6,25 @@
 </head>
 <body>
 	<div class="content row">
-		<div class="dashboard">
+		<div class="dashboard col-8">
 			<div>
 				<h3 class="heading left"> Click on the box and try to match color</h3>
-				<p class="timer right"> 00:<span id="timer">00</span></p>
+				<p class="right timer"> Time: <span id="timer" class="count">00:<span class="sec">00</span></span></p>
 			</div>
 			<div class="grid-container">
 				
+			</div>
+			<div class="result-container col-4 hidden">
+				<div class="result">
+					<p class="lost hidden"> You Lost!</p>
+					<p class="win hidden"> You Won! </p>
+					<a href="index.html" class="play-again">Play Again </a>
+				</div>
+			</div>
+			<div class="score-card">
+				<p class="level"> Level: <span class="count"> 1 </span></p>
+				<p class="score"> Min Score:  <span class="count" id="minScore">  </span> </p>
+				<p class="score"> Score: <span class="count" id="score"> 0 </span></p>
 			</div>
 		</div>		  		
 	</div>

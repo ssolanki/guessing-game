@@ -5,10 +5,11 @@
 
 }
 .dashboard{
-	margin: 20px 50px;
+	margin: 15px 50px;
   opacity: 1;
   background-image: linear-gradient(to left, $blue-lightest, $blue-light);
   background-color: $blue-light;
+	border-radius: 5px; 
   width: 50%;
   height: 400px;
 }
@@ -18,10 +19,9 @@
 	margin: 0;
 }
 .timer{
-	color: $voilet;
-	font-size: 16px;
-	font-weight: 700;
-	padding: 10px 30px;
+	padding: 10px 30px! important;
+	font-weight: bold;
+	color: $blue;
 	margin: 0;	
 }
 .grid-container{
@@ -37,5 +37,53 @@
 		&:nth-child(4n+4){
 			// display: block;
 		}
+		&.transparent{
+			background: $background-color !important;
+			opacity: 0.5;
+		}
 	}
+}
+.result-container{
+	display: inline-block;
+	.result{
+		font-size: 24px;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;	
+	}
+	.win{
+		color: $green;
+	}
+	.lost{
+		color: $red;
+	}
+}
+.score-card{
+	display: flex;
+  padding: 0px 40px;
+  .level{
+  	font-size: 18px;
+  	color: $blue;
+  	margin: 5px;
+  	font-weight: bold;
+  }
+  .score{
+  	font-size: 18px;
+  	margin: 5px;
+  	color: $blue;
+  	font-weight: bold;
+  }
+}
+.count{
+	color: $voilet;
+	padding: 2px 15px;
+	background: $gray-light;
+	border-radius: 5px; 
+}
+.play-again{
+    text-decoration: none;
+    background: $gray-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
 }

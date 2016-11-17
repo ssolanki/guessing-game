@@ -49,16 +49,22 @@ input{
 		color: $blue;
 	}
 }
-.col-3{
-	width: 25%;
-  float: left;
+.col-4{
+	width: 33.33%;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
-.transparent{
-	opacity: 0;
+.col-8{
+	width: 66.67%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.hidden{
+	display: none !important;
 }
 .white {
 	background: $white !important;
