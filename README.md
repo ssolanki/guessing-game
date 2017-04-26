@@ -8,8 +8,8 @@
 
 ### Build
 Go to project directory and run these commands to build.
-  npm i
-  gulp
+- npm i
+- gulp
 
 go to build directory and open index.html file
 
