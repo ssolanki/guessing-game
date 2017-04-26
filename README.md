@@ -7,9 +7,10 @@
 - Gulp should be globally installed
 
 ### Build
-run these commands to build.
-- npm i
-- gulp
+Go to project directory and run these commands to build.
+  npm i
+  gulp
+
 go to build directory and open index.html file
 
 ### Further Improvements:
